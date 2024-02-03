@@ -1,0 +1,94 @@
+.body {
+    background-color: #171717;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  
+  .full__page {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .bar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 2;
+    justify-content: space-between;
+  
+    &__inverted {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      z-index: 2;
+    }
+  }
+  
+  .bar {
+    height: 1vh;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .animated__layers {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  
+    & > * {
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      inset: 0;
+    }
+  }
+  
+  .dot {
+    background-color: orange;
+    top: 80%;
+    left: 80%;
+    transform: translate(-80%, -80%);
+    overflow: auto;
+     overflow-y: scroll;
+  }
+  
+  .title {
+    color: rgb(5, 74, 238);
+    font-size: 8vw;
+    // padding-left: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    & > div {
+      display: block;
+  
+      & > span {
+        display: block;
+      }
+    }
+  }
+  
+  .newComponent {
+    background-color: #fff;
+    color: #333;
+    // padding: 20px;
+    // margin-top: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    display: none; // Initially hide the new component
+  }
+  
+  // Style for the newComponent when it's shown
+  .showNewComponent .newComponent {
+    display: block;
+    position: absolute;
+  }
+  

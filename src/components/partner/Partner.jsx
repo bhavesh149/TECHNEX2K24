@@ -11,7 +11,7 @@ import data from '../../assets/fake-data/dataPartner'
 
 function Partner(props) {
     return (
-        <div className="brands block-text center" data-aos="fade-up" data-aos-duration="2000">
+        <div id='sponsors' className="brands block-text center" data-aos="fade-up" data-aos-duration="2000">
                             <h6 className="sub-heading"><span>Our Sponsors</span></h6>
 
                             <Swiper

@@ -1,18 +1,19 @@
 import React , { useState , useEffect } from 'react';
 
 import { Link , NavLink } from 'react-router-dom';
-import menus from '../../pages/menu';
+// import menus1 from '../../pages/menu1';
 
 import logo from '../../assets/images/logo/technexLogo.png'
 
 import './styles.scss';
+import menus1 from '../../pages/menu1';
 
 
 
 
 
 
-const Header = () => {
+const Header1 = () => {
 
     const [scroll, setScroll] = useState(false);
         useEffect(() => {
@@ -52,7 +53,7 @@ const Header = () => {
                             <nav id="main-nav" className={`main-nav ${menuActive ? 'active' : ''}`}>
                                     <ul id="menu-primary-menu" className="menu">
                                         {
-                                            menus.map((data,idx) => (
+                                            menus1.map((data,idx) => (
                                                 <li key={idx} onClick={()=> handleDropdown(idx)} className={`menu-item ${data.namesub ? 'menu-item-has-children' : ''} ${activeIndex === idx ? 'active' : ''}`} 
                                                 
                                                 >
@@ -152,4 +153,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default Header1;

@@ -504,7 +504,7 @@ body[data-magic-cursor="hide"] .mouse-cursor{display: none; opacity: 0; visibili
     height: 2000px;
     top: -70%;
     left: -60%;
-    z-index: -1;
+    z-index: -99;
     background: radial-gradient(34.98% 34.98% at 50% 50%, #725BDA 0%, rgba(6, 19, 45, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     opacity: 0.5;
 
@@ -514,7 +514,7 @@ body[data-magic-cursor="hide"] .mouse-cursor{display: none; opacity: 0; visibili
     }
 
     &.s3 {
-        z-index: -2;
+        z-index: -99;
         width: 800px;
         height: 800px;
         background: linear-gradient(239.67deg, #0057FF -10.29%, #7FF805 197.14%);

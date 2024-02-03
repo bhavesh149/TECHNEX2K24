@@ -1,0 +1,218 @@
+@keyframes blink {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  .animate-blink {
+    animation: blink 2s infinite;
+  }
+  
+  /* tailwind.css or include these styles in your existing Tailwind CSS setup */
+  .ripple-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transform: scale(0);
+    pointer-events: none;
+    transition: transform 0.5s;
+  }
+  
+  .event-box:hover .ripple-effect {
+    transform: scale(2);
+  }
+  
+  /* EventPage.css */
+  
+  .register-button:hover {
+    animation: none !important;
+  }
+  
+  .glass-bg {
+    
+    background: rgba(255, 255, 255, 0.1); /* Adjust the alpha value for transparency */
+  }
+  
+  
+  /* EventPage.css */
+  
+  .prize-amount {
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  }
+  
+  /* EventPage.css */
+  
+  /* EventPage.css */
+  
+  .event-box .prize-amount {
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+  }
+  
+  .event-box:hover .prize-amount {
+    animation: colorTransition 1s infinite alternate; /* Use any duration you prefer */
+    font-size: larger;
+  }
+  
+  @keyframes colorTransition {
+    0% {
+      color: inherit; /* Inherit the color from the parent */
+    }
+    25% {
+      color: purple; /* Change to your preferred color */
+    }
+    50% {
+      color: #DDA0DD; /* Change to your preferred color */ /*DDA0DD,E0B0FF,9966CC,8CA7E8
+    }
+    75% {
+      color: #E0B0FF ; /* Change to your preferred color */
+    }
+    100% {
+      color: #9666CC; /* Change to your preferred color */
+    }
+  }
+  
+  
+  /* EventPage.css */
+  /* 
+  /* @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  .wave-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wave-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 80%, transparent 80%);
+    background-size: 200% 200%;
+    animation: ripple 2s linear; /* Adjust the duration to control the speed of the wave */
+    /* transition: transform 0.3s, opacity 0.3s;
+    transform: scale(0);
+  }
+  
+  .wave-effect:hover::before {
+    transform: scale(2);
+    opacity: 0;
+  } */ 
+  
+  /* EventPage.css */
+  
+  /* ... (your existing styles) */
+  
+  .event-box {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  /* ... (your existing styles) */
+  
+  /* h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  } */
+  
+  p{
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important; */
+  }
+  
+  /* EventPage.css */
+  
+  .glow-shadow:hover {
+    box-shadow: 0 0 20px rgba(148, 87, 235, 0.8) !important; /* Adjust the color and intensity as needed */
+     /* Adjust the brightness for the glow effect */
+    transition: box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
+  
+  /* EventPage.css */
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px #8e44ad;
+    }
+    50% {
+      box-shadow: 0 0 20px #8e44ad;
+    }
+    100% {
+      box-shadow: 0 0 10px #8e44ad;
+    }
+  }
+  
+  .glow-button {
+    animation: glow 2s infinite alternate !important;
+  }
+  
+  /* EventPage.css */
+  
+  @keyframes subtleGlow {
+    0% {
+      box-shadow: 0 0 10px var(--glow-color);
+    }
+    50% {
+      box-shadow: 0 0 20px var(--glow-color);
+    }
+    100% {
+      box-shadow: 0 0 10px var(--glow-color);
+    } 
+  }
+  
+  .subtle-glow {
+    --glow-color: #8e44ad !important; /* Change this to your desired color */
+    animation: subtleGlow 0.5s infinite alternate !important;
+  }
+  
+  /* EventPage.css */
+  
+  /* EventPage.css */
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container-bg {
+    position: relative;
+    overflow: hidden;
+    /* background-image: url('./Untitled.jpeg');  */
+    background-size: cover;
+  }
+  
+  .blur-background {
+    filter: blur(5px); /* Adjust the blur effect as needed */
+  }
+  
+  .blocks-container {
+    position: relative;
+    z-index: 1; /* Ensure blocks are above the background image */
+  }
+  
+  /* Rest of your existing styles */
+  
+  
+  .footer {
+    /* background-color: #333; Set the background color you want for the footer */
+    /* color: #fff; Set the text color you want for the footer */
+    /* padding: 20px;  */
+  }

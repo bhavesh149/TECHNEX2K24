@@ -1,8 +1,8 @@
-const menus = [
+const menus1 = [
     {
         id: 1,
         name: 'Home',
-        links: '#home',
+        links: '/',
         // namesub: [
         //     {
         //         id: 1,
@@ -25,7 +25,7 @@ const menus = [
     {
         id: 2,
         name: 'Events',
-        links: '#events',
+        links: '/',
         // namesub: [
         //     {
         //         id: 1,
@@ -72,13 +72,13 @@ const menus = [
     {
         id: 4,
         name: 'Sponsors',
-        links: '#sponsors',
+        links: '/',
         
     },
     {
         id: 5,
         name: 'Team',
-        links: '#team',
+        links: '/',
         
     },
     {
@@ -102,4 +102,4 @@ const menus = [
     
 ]
 
-export default menus;
+export default menus1;

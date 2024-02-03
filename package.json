@@ -2,16 +2,22 @@
   "name": "technex2",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@react-spring/web": "^9.7.3",
+    "@splinetool/react-spline": "^2.2.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+    "bootstrap": "^4.0.0-alpha.6",
     "chart.js": "^3.9.1",
     "faker": "^5.5.3",
+    "framer-motion": "^10.18.0",
+    "gsap": "^3.12.5",
     "react": "^18.0.0",
-    "react-bootstrap": "^2.3.0",
+    "react-bootstrap": "^2.10.0",
     "react-bootstrap-accordion": "^1.0.0",
     "react-chartjs-2": "^4.3.1",
     "react-dom": "^18.0.0",
@@ -46,8 +52,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "node-sass": "^7.0.1"
   }
 }

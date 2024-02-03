@@ -6,16 +6,16 @@ import img3 from "../../assets/images/Abstract 3D Gradient Shapes - 9.png";
 
 function Banner(props) {
   return (
-    <section className="banner" >
+    <section className="banner">
       <div className="shape right"></div>
       <div className="container big">
         <div className="row">
           <div className="col-xl-6 col-md-12">
-            <div className="banner__left ml-9">
+            <div className="banner__left xl:ml-9">
               <div className="block-text">
                 <h2 className="heading  ">
-                Welcome to 
-                                             <span className="s1 arlo_tm_animation_text_word">TECHNEX-23</span> <br />
+                Welcome to&nbsp; 
+                                             <span className="s1 arlo_tm_animation_text_word "> TECHNEX-23</span> <br />
 
                 </h2>
                 <br />

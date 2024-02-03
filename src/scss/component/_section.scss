@@ -623,7 +623,7 @@
         position: absolute;
         top: 30%;
         left: 0;
-        z-index: -2;
+        z-index: -99;
 
     }
     .shape {
@@ -2560,8 +2560,8 @@ section.touch {
             
             img {
                 width: 100%;
-                height: 403px;
-                object-fit: cover;
+                // height: 403px;
+                object-fit: contain;
                 margin-bottom: 14px;
             }
             p {

@@ -1,7 +1,7 @@
 import React , {useState ,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/images/logo/logo.png'
+import logo from '../../assets/images/logo/technexLogo.png'
 
 
 function Footer(props) {
@@ -43,7 +43,7 @@ function Footer(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <div className="footer__main">
+                            {/* <div className="footer__main">
                                 <div className="block-text center">
 
                                     <h3 className="heading">{dataBlock.heading}</h3>
@@ -58,19 +58,19 @@ function Footer(props) {
                                     </div>
                                     <button className="action-btn"><span>Subscribe</span></button>
                                 </form>
-                            </div>
+                            </div> */}
 
                             <div className="footer__bottom">
-                                <Link to="/" className="logo"><img src={logo} alt="Cyfonii" /></Link>
+                                <Link to="/" className="logo"><img src={logo} alt="Cyfonii" width={140} /></Link>
 
                                 <div className="center mb--30">
                                     <ul className="list">
-                                        <li><Link to="/">Home</Link></li>
-                                        <li><Link to="/nfts">Explore</Link></li>
-                                        <li><Link to="/about">About</Link></li>
-                                        <li><Link to="/nfts">Collections</Link></li>
-                                        <li><Link to="/team">Team</Link></li>
-                                        <li><Link to="/contact">Contact</Link></li>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#events">Events</a></li>
+                                        <li><Link to="/about">Gallary</Link></li>
+                                        <li><a href="#team">Team</a></li>
+                                        <li><Link to="/team">Privacy</Link></li>
+                                        <li><Link to="/contact">About Us</Link></li>
                                     </ul>
                                     <p>Copyright © 2022, Cyfonii. Designed by Themesflat</p>
                                 </div>
